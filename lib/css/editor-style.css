@@ -1,0 +1,125 @@
+:root {
+  --editor-bg: #eee;
+  --editor-border: #3f87a6;
+  --editor-font:"OCR A Std", monospace;
+
+}
+
+* {
+  padding: 0;
+  margin: 0
+  box_sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+
+}
+
+.editor {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor__wrapper {
+  background: var(--editor-bg);
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.editor__body {
+  flex: 1;
+  margin-bottom: 1em;
+
+}
+
+.editor__footer {
+  display: flex;
+  margin-top: 1em;
+
+
+}
+
+.editor__footer__left{
+    display: flex;
+    flex-direction: column;
+}
+
+.editor__footer__right{
+    flex: 1;
+    margin-left: 10px;
+    overflow: hidden;
+
+}
+
+.editor__btn{
+    border: 0;
+    padding: 1em;
+    background-color: #fff;
+    border: 2px solid #333;
+    margin-top: 1em;
+    width: 100px;
+    cursor: pointer;
+    font-family: var(--editor-font);
+}
+
+.editor__console {
+  background-color: #fff;
+  width: auto;
+  height: 130px;
+  margin-top: .9em;
+  border: 2px solid var(--editor-border);
+  overflow: auto;
+}
+
+.editor__console-logs {
+  width: 80%;
+  height: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+
+  overflow: auto;
+}
+
+.editor_code {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  border: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid var(--editor-border);
+}
+
+.editor__language {
+  height: 30px;
+  width: 100%;
+}
+
+.editor__language__text {
+  font-size: 16px;
+  font-family: var(--editor-font);
+}
+
+.editor_language_select {
+  font-family: monospace;
+  overflow: scroll;
+}
+
+.editor_language_option {
+  font-size: 12px;
+  font-family: monospace;
+}
