@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="CodeEditor" content="">
+    <link rel="stylesheet" href="lib/css/editor-style.css">
+    <title>Code Editor</title>
+
+  </head>
+  <body>
+    <div class="editor">
+        <div class="editor__wrapper">
+            <div class="editor__body">
+              <div class="editor__language">
+                <span class="editor__language__text">Choose the language: </span>
+                <select size="1" id="editor_language_select" onchange="SelectValueUpdate()">
+                    <option value="0" class="editor_language_option" selected>C/C++</option>
+                    <option value="1" class="editor_language_option">C#</option>
+                    <option value="2" class="editor_language_option">Python</option>
+                    <option value="3" class="editor_language_option">Java</option>
+                    <option value="4" class="editor_language_option">Javascript</option>
+                    <option value="5" class="editor_language_option">Bruno Chan is the Best</option>
+                  </select>
+              </div>
+                <div class="editor_code" id="editor">
+
+                </div>
+            </div>
+
+            <div class="editor__footer">
+                <div class="editor__footer__left">
+                    <button class="editor__btn editor__run" type="button" name="button">Run ></button>
+                    <button class="editor__btn editor__reset" type="button" name="button">Reset ></button>
+
+                </div>
+                <div class="editor__footer__right">
+                    <div class="editor__console">
+                        <ul class="editor__console-logs" id="editor__console">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="lib/js/ace-editor/src-min/ace.js"></script>
+    <script src="lib/js/ace-editor/src-min/mode-python.js"></script>
+    <script src="lib/js/ace-editor/src-min/mode-javascript.js"></script>
+    <script src="lib/js/ace-editor/src-min/mode-java.js"></script>
+    <script src="lib/js/ace-editor/src-min/mode-c_cpp.js"></script>
+
+    <script src="lib/js/ace-editor/src-min/ext-language_tools.js"></script>
+
+
+    <script src="lib/js/editor.js"></script>
+    <script src="lib/js/editor_console.js"></script>
+
+  </body>
+</html>
